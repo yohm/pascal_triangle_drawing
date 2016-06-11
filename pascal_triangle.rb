@@ -35,10 +35,11 @@ def draw_image(pngfile, image, num_colors, s = 5)
   end
 
   image.each_with_index do |row,row_idx|
+    offset_x = (size_x - row.size*s)/2
     row.each_with_index do |cell,col_idx|
       next if cell == 0
       color = num_to_color[ cell ]
-      png.rect( col_idx*s, row_idx*s, (col_idx+1)*s, (row_idx+1)*s, color, color)
+      png.rect( col_idx*s+offset_x, row_idx*s, (col_idx+1)*s+offset_x, (row_idx+1)*s, color, color)
     end
   end
   png.save( pngfile )
