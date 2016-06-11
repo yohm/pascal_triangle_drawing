@@ -53,6 +53,5 @@ mod = ARGV[1].to_i
 pixel = (ARGV[2] || 5).to_i
 
 image = PascalTriangle.generate(l, mod)
-pp image
 draw_image('pascal_triangle.png', image, mod, pixel)
 
