@@ -30,7 +30,7 @@ def draw_image(pngfile, image, num_colors, s = 5)
   png = ChunkyPNG::Image.new(size_x, size_y, ChunkyPNG::Color.from_hex('#FFFFFF'))
   num_to_color = {}
   num_colors.times do |n|
-    c = ChunkyPNG::Color.from_hsl(360.0*n.to_f/num_colors, 0.5, 0.5) 
+    c = ChunkyPNG::Color.from_hsl(360.0*n.to_f/num_colors, 0.8, 0.5, 180)
     num_to_color[n] = c
   end
 
