@@ -1,4 +1,4 @@
-# Drawing Pascal' Triangle
+# Drawing Pascal's Triangle
 
 Calculate Pascal's Triangle and draw the triangle depending on the mod of the given number.
 Generated patterns are known to resemble the Sierpinski gasket.
@@ -30,6 +30,7 @@ ruby pascal_triangle.rb 400 20 2
 
 The arguments indicate the number of rows in the Pascal's triangle, the number to take modulo, and pixel size of each element.
 
+![snapshot](https://raw.githubusercontent.com/yohm/pascal_triangle_drawing/master/sample/pascal_triangle.png)
 
 ## License
 
