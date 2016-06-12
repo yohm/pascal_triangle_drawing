@@ -4,7 +4,7 @@ require 'json'
 
 class PascalTriangle
 
-  def self.generate(l, mod=nil)
+  def self.generate(l, mod=2)
     result = []
     current = []
     l.times do |row|
@@ -13,11 +13,7 @@ class PascalTriangle
         current[i] = current[i] + current[i+1].to_i
       end
       current.unshift(1)
-      if mod
-        result << current.map {|x| x % mod }
-      else
-        result << current.dup
-      end
+      result << current.map {|x| x % mod }
     end
     result
   end
